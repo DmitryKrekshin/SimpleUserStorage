@@ -1,0 +1,20 @@
+﻿version: '3.6'
+
+services:
+  userstorage:
+    image: userstorage
+    build:
+      context: .
+      dockerfile: UserStorage/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+  mssql:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: mssql
+    user: root
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Rpassw!1
+    ports:
+      - "1443:1433"
