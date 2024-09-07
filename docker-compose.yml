@@ -12,9 +12,16 @@ services:
   mssql:
     image: mcr.microsoft.com/mssql/server:latest
     container_name: mssql
+    hostname: mssql
     user: root
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Rpassw!1
     ports:
       - "1443:1433"
+  redis:
+    image: redis
+    container_name: redis
+    hostname: redis
+    ports:
+      - "6379:6379"
