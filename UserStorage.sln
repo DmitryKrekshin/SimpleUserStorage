@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserStorage", "UserStorage\UserStorage.csproj", "{7F63FD64-2990-4C32-B0ED-7B6EDAE47AE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserStorage.WebApi", "UserStorage.WebApi\UserStorage.WebApi.csproj", "{7F63FD64-2990-4C32-B0ED-7B6EDAE47AE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE8B01E1-D10B-4E24-B5ED-CF76FE91465F}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserStorage.Domain", "UserStorage.Domain\UserStorage.Domain.csproj", "{C248E50D-1E77-4621-A7EE-D48D1C0001C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserStorage.Infrastructure", "UserStorage.Infrastructure\UserStorage.Infrastructure.csproj", "{DA671A23-C8E1-47D8-BBDF-F0409F1A0B21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,5 +21,13 @@ Global
 		{7F63FD64-2990-4C32-B0ED-7B6EDAE47AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F63FD64-2990-4C32-B0ED-7B6EDAE47AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F63FD64-2990-4C32-B0ED-7B6EDAE47AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C248E50D-1E77-4621-A7EE-D48D1C0001C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C248E50D-1E77-4621-A7EE-D48D1C0001C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C248E50D-1E77-4621-A7EE-D48D1C0001C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C248E50D-1E77-4621-A7EE-D48D1C0001C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA671A23-C8E1-47D8-BBDF-F0409F1A0B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA671A23-C8E1-47D8-BBDF-F0409F1A0B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA671A23-C8E1-47D8-BBDF-F0409F1A0B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA671A23-C8E1-47D8-BBDF-F0409F1A0B21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

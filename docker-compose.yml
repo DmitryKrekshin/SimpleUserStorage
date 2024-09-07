@@ -1,11 +1,11 @@
 ﻿version: '3.6'
 
 services:
-  userstorage:
+  userstorage.webapi:
     image: userstorage
     build:
       context: .
-      dockerfile: UserStorage/Dockerfile
+      dockerfile: UserStorage.WebApi/Dockerfile
     ports:
       - "8080:8080"
       - "8081:8081"

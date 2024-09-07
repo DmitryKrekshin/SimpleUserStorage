@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UserStorage.Repository;
+using UserStorage.Infrastructure;
 
-namespace UserStorage;
+namespace UserStorage.Domain;
 
 public static class MigrationExtensions
 {
