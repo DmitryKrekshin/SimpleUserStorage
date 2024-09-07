@@ -10,7 +10,6 @@ public class Context(DbContextOptions<Context> options) : DbContext(options)
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("dbo");
         modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
     }
 }

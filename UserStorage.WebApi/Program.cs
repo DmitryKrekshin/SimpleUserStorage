@@ -13,7 +13,7 @@ var cacheConnection = builder.Configuration.GetConnectionString("Cache");
 builder.Services.AddStackExchangeRedisCache(options => options.Configuration = cacheConnection);
 
 var connectionString = builder.Configuration.GetConnectionString("Database");
-builder.Services.AddDbContext<Context>(options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("UserStorage.WebApi")));
+builder.Services.AddDbContext<Context>(options => options.UseNpgsql(connectionString, b => b.MigrationsAssembly("UserStorage.WebApi")));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
